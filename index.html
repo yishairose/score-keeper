@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Score Keeer</title>
+</head>
+<style>
+    .winner {
+        color: green;
+    }
+
+    .looser {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Score Keeper
+                        </p>
+
+                    </header>
+                    <figure class="image image is-3by2">
+                        <img src="lisa-keffer-3B8nIiT-Pmc-unsplash.jpg">
+                    </figure>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 class="title is-2"><span id="player1display">0</span> to <span
+                                    id="player2display">0</span></h2> <br>
+                            <p>Use the buttons below to keep score</p>
+
+                            <label for="playingTo" class="label">Playing to:</label>
+                            <div class="select is-rounded">
+                                <select id="playingTo">
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="is-primary button card-footer-item" id="player1inc">+1 Player One</button>
+                        <button class="is-infor button card-footer-item" id="player2inc">+1 Player Two</button>
+                        <button class="is-danger button card-footer-item" id="reset">Reset</button>
+
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
